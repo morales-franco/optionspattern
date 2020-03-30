@@ -1,2 +1,3 @@
-# optionspattern
-Options Pattern - Using IOption, IOptionsMonitor &amp; IOptionsSnapshot 
+# Options pattern
+### Testing IOption, IOptionsMonitor &amp; IOptionsSnapshot 
+
