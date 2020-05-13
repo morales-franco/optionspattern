@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using OptionsPattern.Entities;
@@ -48,6 +44,7 @@ namespace OptionsPattern.Controllers
             {
                 Console.WriteLine($"Section change! {a}");
             });
+      
         }
 
         public IActionResult Get()
@@ -59,9 +56,5 @@ namespace OptionsPattern.Controllers
                 Monitor = _configMonitor.Email,
             });
         }
-
-        
-
-
     }
 }

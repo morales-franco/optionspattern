@@ -12,9 +12,10 @@ namespace OptionsPattern.Services
 
         public SingletonService(IOptions<AppConfiguration> configOptions,
             IOptionsMonitor<AppConfiguration> configMonitor)
-             /*
-              * IOptionsSnapshot<AppConfiguration> configSnapshot - Excep
-              */
+        /*
+         * IOptionsSnapshot<AppConfiguration> configSnapshot - Exception!
+         * IOptionsSnapshot is a Scoped Service. You can not inject it in a Singleton Service!
+         */
         {
             _configOptions = configOptions.Value;
             _configMonitor = configMonitor.CurrentValue;
